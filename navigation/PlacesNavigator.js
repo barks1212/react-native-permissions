@@ -12,12 +12,20 @@ import Colors from '../constants/Colors'
 const PlacesNavigator = createStackNavigator({
    Places: {
        screen: PlacesListScreen,
-       navigationOptions: {
-    }
+       navigationOptions: {}
    },
-    PlaceDetail: PlaceDetailScreen,
-    NewPlace: NewPlaceScreen,
-    Map: MapScreen
+    PlaceDetail: {
+        screen: PlaceDetailScreen,
+        navigationOptions: {}
+    },
+    NewPlace: {
+        screen: NewPlaceScreen,
+        navigationOptions: {}
+    } ,
+    Map:  {
+        screen: MapScreen,
+        navigationOptions: {}
+    }   
 }, {
     defaultNavigationOptions: {
         headerStyle: {

@@ -1,12 +1,19 @@
 import React from 'react'
-import {View, Text, StyleSheet} from 'react-native'
+import {View, Text, TextInput, StyleSheet, ScrollView} from 'react-native'
 
 const NewPlaceScreen = props => {
     return (
+        <ScrollView>
         <View>
-            <Text> new place screen</Text>
+            <Text>Title</Text>
+            <TextInput />
         </View>
+        </ScrollView>
     )
+}
+
+NewPlaceScreen.navigationOptions = {
+    headerTitle: 'Add Place'
 }
 
 const styles = StyleSheet.create({

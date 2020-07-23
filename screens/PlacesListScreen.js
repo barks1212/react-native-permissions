@@ -14,15 +14,17 @@ const PlacesListScreen = (props) => (
 
 PlacesListScreen.navigationOptions = (navData) => ({
   headerTitle: 'All Places',
-  headerRight: <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
-    <Item
-      title="Add Place"
-      iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
-      onPress={() => {
-        navData.navigation.navigate('NewPlace');
-      }}
-    />
-               </HeaderButtons>,
+  headerRight: (
+    <HeaderButtons HeaderButtonComponent={CustomHeaderButton}>
+      <Item
+        title="Add Place"
+        iconName={Platform.OS === 'android' ? 'md-add' : 'ios-add'}
+        onPress={() => {
+          navData.navigation.navigate('NewPlace');
+        }}
+      />
+    </HeaderButtons>
+  ),
 });
 
 const styles = StyleSheet.create({

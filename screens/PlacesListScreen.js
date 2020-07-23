@@ -8,7 +8,7 @@ import { HeaderButtons, Item } from 'react-navigation-header-buttons';
 import CustomHeaderButton from '../components/HeaderButton';
 import PlaceItem from '../components/Placeitem';
 
-const PlacesListScreen = (props) => {
+const PlacesListScreen = (props) => { 
   const places = useSelector((state) => state.places.places);
 
   return (
